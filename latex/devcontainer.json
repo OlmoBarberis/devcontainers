@@ -1,0 +1,107 @@
+{
+  "forwardPorts": [],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "james-yu.latex-workshop"
+  ],
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "icon": "terminal-bash"
+      }
+    },
+    "latex-workshop.latex.tools": [
+      {
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-shell-escape",
+          "-file-line-error",
+          "-pdf",
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+        ], 
+        "command": "latexmk",
+        "env": {},
+        "name": "latexmk"
+      },
+      {
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-shell-escape",
+          "-file-line-error",
+          "-lualatex",
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+        ],
+        "command": "latexmk",
+        "env": {},
+        "name": "lualatexmk"
+      },
+      {
+        "args": [
+          "%DOC%"
+        ],
+        "command": "latexmk",
+        "env": {},
+        "name": "latexmk_rconly"
+      },
+      {
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-shell-escape",
+          "-file-line-error",
+          "%DOC%"
+        ],
+        "command": "pdflatex",
+        "env": {},
+        "name": "pdflatex"
+      },
+      {
+        "args": [
+          "%DOCFILE%"
+        ],
+        "command": "bibtex",
+        "env": {},
+        "name": "bibtex"
+      },
+      {
+        "args": [
+          "-e",
+          "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+        ],
+        "command": "Rscript",
+        "env": {},
+        "name": "rnw2tex"
+      },
+      {
+        "args": [
+          "-e",
+          "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+        ],
+        "command": "julia",
+        "env": {},
+        "name": "jnw2tex"
+      },
+      {
+        "args": [
+          "-e",
+          "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+        ],
+        "command": "julia",
+        "env": {},
+        "name": "jnw2texmintex"
+      }
+    ],
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "browser",
+  },
+}
