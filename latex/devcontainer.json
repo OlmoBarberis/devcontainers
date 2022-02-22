@@ -1,8 +1,6 @@
 {
   "forwardPorts": [],
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "olmobarberis/devcontainer-latex:latest"
   "extensions": [
     "ms-azuretools.vscode-docker",
     "mhutchie.git-graph",
