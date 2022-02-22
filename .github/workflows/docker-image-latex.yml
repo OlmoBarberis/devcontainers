@@ -30,4 +30,4 @@ jobs:
       with:
         context: "{{defaultContext}}:latex"
         push: true
-        tags: latex-devenv:latest
+        tags: devcontainer-latex:latest
