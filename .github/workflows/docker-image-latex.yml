@@ -28,7 +28,7 @@ jobs:
     - name: Build image and push to Docker Hub and GitHub Container Registry
       uses: docker/build-push-action@v2
       with:
-        context: "{{defaultContext}}/latex"
-        file: "{context}/Dockerfile"
+        context: "./latex"
+        file: "./latex/Dockerfile"
         push: true
-        tags: devcontainer-latex:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/devcontainer-latex:latest
