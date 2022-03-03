@@ -2,8 +2,8 @@ name: Webdev DevEnv Docker Image Builder
 
 on:
   push:
-    paths:
-      - 'webdev/**'
+    branches:
+      - main
 
 jobs:
   build-and-push-docker-image:
