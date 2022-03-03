@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - './latex/Dockerfile'
+      - latex/**
   pull_request:
     branches: [ main ]
 
