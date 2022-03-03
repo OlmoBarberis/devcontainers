@@ -3,6 +3,8 @@ name: Latex DevEnv Docker Image Builder
 on:
   push:
     branches: [ main ]
+    paths:
+      - './latex/Dockerfile'
   pull_request:
     branches: [ main ]
 
