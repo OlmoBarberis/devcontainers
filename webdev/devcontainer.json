@@ -1,37 +1,39 @@
 {
-  "image": "olmobarberis/devcontainer-webdev:latest",
-  "name": "Webdev Container",
-  "extensions": [
-      "ms-azuretools.vscode-docker",
-      "github.copilot",
-      "eamodio.gitlens",
-      "eg2.vscode-npm-script",
-      "bradlc.vscode-tailwindcss",
-      "austenc.tailwind-docs",
-      "dbaeumer.vscode-eslint",
-      "esbenp.prettier-vscode"
-  ],
-  "settings": {
-      "terminal.integrated.profiles.linux": {
-          "bash": {
-              "path": "bash",
-              "icon": "terminal-bash"
-          }
-      },
-      "emmet.includeLanguages": {
-          "javascript": "javascriptreact"
-      },
-      "javascript.updateImportsOnFileMove.enabled": "always",
-      "prettier.printWidth": 360,
-      "prettier.singleQuote": true,
-      "[typescriptreact]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "image": "olmobarberis/devcontainer-webdev:latest",
+    "name": "GBArbor Website",
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "github.copilot",
+        "eamodio.gitlens",
+        "eg2.vscode-npm-script",
+        "bradlc.vscode-tailwindcss",
+        "austenc.tailwind-docs",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "bash",
+                "icon": "terminal-bash"
+            }
         },
-        "[javascript]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "emmet.includeLanguages": {
+            "javascript": "javascriptreact"
         },
-        "[typescript]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-  },
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "prettier.printWidth": 360,
+        "prettier.singleQuote": true,
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+    },
+    // Assuming to use Yarn as a package manager
+    "postStartCommand": "yarn install --dev"
 }
