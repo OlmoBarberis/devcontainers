@@ -1,7 +1,7 @@
 {
-    "image" : "",
-    "name": "Frontend Labeling Tool",
-    "extensions": [
+  "image": "olmobarberis/devcontainer-webdev:latest",
+  "name": "Webdev Container",
+  "extensions": [
       "ms-azuretools.vscode-docker",
       "github.copilot",
       "eamodio.gitlens",
@@ -10,15 +10,28 @@
       "austenc.tailwind-docs",
       "dbaeumer.vscode-eslint",
       "esbenp.prettier-vscode"
-    ],
-    "workspaceFolder": "/frontend",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/frontend,type=bind,consistency=cached",
-    "settings": {
+  ],
+  "settings": {
       "terminal.integrated.profiles.linux": {
-        "bash": {
-          "path": "bash",
-          "icon": "terminal-bash"
-        }
+          "bash": {
+              "path": "bash",
+              "icon": "terminal-bash"
+          }
       },
-    },
-  }
+      "emmet.includeLanguages": {
+          "javascript": "javascriptreact"
+      },
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "prettier.printWidth": 360,
+      "prettier.singleQuote": true,
+      "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+  },
+}

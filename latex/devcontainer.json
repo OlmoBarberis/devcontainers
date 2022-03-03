@@ -1,6 +1,6 @@
 {
   "forwardPorts": [],
-  "image": "olmobarberis/devcontainer-latex:latest"
+  "image": "olmobarberis/devcontainer-latex:latest",
   "extensions": [
     "ms-azuretools.vscode-docker",
     "mhutchie.git-graph",
@@ -24,7 +24,7 @@
           "-pdf",
           "-outdir=%OUTDIR%",
           "%DOC%"
-        ], 
+        ],
         "command": "latexmk",
         "env": {},
         "name": "latexmk"
@@ -100,6 +100,6 @@
       }
     ],
     "latex-workshop.message.update.show": false,
-    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.view.pdf.viewer": "browser"
   },
 }
