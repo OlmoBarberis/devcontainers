@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - webdev/**
 
 jobs:
   build-and-push-docker-image:
