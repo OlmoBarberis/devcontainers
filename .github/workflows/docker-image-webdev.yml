@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - './webdev/Dockerfile'
+      - 'webdev/Dockerfile'
   pull_request:
     branches: [ main ]
 
