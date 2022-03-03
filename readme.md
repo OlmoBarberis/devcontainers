@@ -24,3 +24,5 @@ Container for webdev with:
 - prettier
 - eslint-prettier-config
 - git
+
+The devcontainer.json file settings assumes to use prettier for style formatting and yarn as a package manager
