@@ -1,0 +1,24 @@
+{
+    "image" : "",
+    "name": "Frontend Labeling Tool",
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "github.copilot",
+      "eamodio.gitlens",
+      "eg2.vscode-npm-script",
+      "bradlc.vscode-tailwindcss",
+      "austenc.tailwind-docs",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode"
+    ],
+    "workspaceFolder": "/frontend",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/frontend,type=bind,consistency=cached",
+    "settings": {
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "bash",
+          "icon": "terminal-bash"
+        }
+      },
+    },
+  }
