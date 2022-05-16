@@ -1,11 +1,11 @@
-name: Python 3.9 DevEnv Docker Image Builder
+name: Python 3.8 DevEnv Docker Image Builder
 
 on:
   push:
     branches:
       - main
     paths:
-      - python-3.9/**
+      - python-3.8/**
 
 jobs:
   build-and-push-docker-image:
@@ -27,7 +27,7 @@ jobs:
     - name: Build image and push to Docker Hub and GitHub Container Registry
       uses: docker/build-push-action@v2
       with:
-        context: "./python-3.9"
-        file: "./python-3.9/Dockerfile"
+        context: "./python-3.8"
+        file: "./python-3.8/Dockerfile"
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/devcontainer-python-3.9:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/devcontainer-python-3.8:latest
