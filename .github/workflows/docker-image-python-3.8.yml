@@ -1,6 +1,7 @@
 name: Python 3.8 DevEnv Docker Image Builder
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main

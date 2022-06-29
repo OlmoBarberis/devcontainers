@@ -1,11 +1,11 @@
 name: Latex DevEnv Docker Image Builder
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
       - latex/**
-  workflow_dispatch:
   pull_request:
     branches: [ main ]
 
