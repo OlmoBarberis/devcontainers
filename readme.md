@@ -18,6 +18,15 @@ Container with texlive-full and several other packages for writing documentation
 
 Docker repository can be found [here](https://hub.docker.com/repository/docker/olmobarberis/devcontainer-latex).
 
+## Python Dev Environment
+
+[![Python 3.10](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.10.yml/badge.svg)](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.10.yml)
+[![Python 3.9](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.9.yml/badge.svg)](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.9.yml)
+Container with python (3.*) installed with pipenv and several other tools. `black`, `autoflake`, and `isort` are installed in a custom virtual environment and can be enable/disabled through VS Code settins. See the devcontainer.json file for more details.
+[![Python 3.8](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.8.yml/badge.svg)](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-python-3.8.yml)
+
+Docker repository can be found [here](https://hub.docker.com/repository/docker/olmobarberis/devcontainer-python).
+
 ## Web dev environment
 
 [![Webdev DevEnv Docker Image Builder](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-webdev.yml/badge.svg)](https://github.com/OlmoBarberis/devcontainers/actions/workflows/docker-image-webdev.yml)
