@@ -13,5 +13,4 @@ RUN /out_of_project_venv/bin/pip3 install autoflake black isort
 RUN pipx uninstall pipenv
 
 ENV PATH=$PATH:/usr/local/bin/python
-
 RUN pip install pipenv
