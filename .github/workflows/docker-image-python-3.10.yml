@@ -30,8 +30,8 @@ jobs:
       with:
         context: "./python"
         file: "./python/Dockerfile"
-        build-args:
-          PYTHON_VARIANT: 3.10-bullseye
+        build-args: |
+          PYTHON_VARIANT=3.10-bullseye
           NODE_VERSION: none
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/devcontainer-python-3.10:latest
