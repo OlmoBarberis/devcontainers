@@ -14,3 +14,5 @@ RUN pipx uninstall pipenv
 
 ENV PATH=$PATH:/usr/local/bin/python
 RUN pip install pipenv
+
+RUN curl -sSL https://install.python-poetry.org | python3 -
